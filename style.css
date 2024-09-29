@@ -1,0 +1,457 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/* ESTILOS PARA TODO EN EL SITIO */
+*{
+    /* border: solid 2px purple;  */
+}
+
+
+/* DETALLES GENERALES DE TODDO EL SITIO */
+body {
+    background-color: rgb(250, 233, 239);
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+}
+
+
+/* BARRA DE NAVEGACION */
+.sticky-nav {
+    height: 250px;
+    width: 50px;
+    background-color: plum;
+    justify-content: center;
+    border-radius: 40px;
+    position: sticky;
+    top: 60px;
+    left: -30px;
+    justify-content: center;
+}
+/* ICONOS DE LA BARRA DE NAVEGACION */
+.sticky-nav a {
+    color: rgb(254, 45, 174);
+    padding: 0px;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid pink;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* ESPACIO EQUILILIBRADO PARTE DE ARRIBA DE LA BARRA DE NAVEGACION */
+.sticky-nav .hogar {
+    padding-top: 1px;
+}
+/* ELIMINAR BORDE INFERIOR DEL ULTIMO ICONO DE LA BARRA DE NAVEGACION */
+.sticky-nav .contacto {
+    border-bottom: none;
+}
+/* EFECTO CAMBIO DE COLOR EN LOS ICONOS DE LA BARRA DE NAVEGACION */
+.sticky-nav a:hover {
+    color: white;
+}
+/* ENLACES ENLISTADOS EN LOS ICONOS DE LA BARRA DE NAVEGACION  */
+ul {
+    text-decoration: none;
+    padding: 0px;
+}
+
+
+/* CONTENEDOR DE TODAS LAS SECCIONES */
+.container {
+    max-width: 800px;
+    width: 100%;
+    margin: 50px 10px;
+    /* height: 100px; */
+}
+
+
+/* PRESENTACION */
+.section {
+    background-color: #ffff;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 30px;
+    display: flex;
+}
+/* ESPACIO DE ANCHO DE LA SEGUNDA SECCION */
+.subsection {
+    width: 50%;
+}
+/* ANCHO Y ALTO DE LA IMAGEN D EPRESENTACIÓN */
+.subsection img {
+    width: 90%;
+    height: 60%;
+}
+/*DISEÑO ESTATUS */
+.status {
+    display: flex;
+    border: 1px solid rgb(254, 45, 174);
+    border-radius: 20px;
+    padding: 6px;
+    margin-right: 40px;
+}
+/* TEXTO ESTATUS */
+.p-status {
+    margin: 0px 10px;
+}
+/* PUNTO ESTATUS */
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: rgb(89, 231, 89);
+    border-radius: 50%;
+}
+/* IMAGEN DE PERFIL */
+.profile {
+    width: 90%;
+    height: 325px;
+    border-radius: 15px;
+    margin-top: 16px;
+}
+/* PARRAFO DE PRESENTACION-DESCRIPCION */
+.p-desc {
+    font-size: x-large;
+    border-bottom: 1px solid rgb(254, 45, 174);
+    padding-bottom: 30px;
+    text-align: justify;
+}
+/* BOTÓN ROSA */
+.btn-pink {
+    background-color: rgb(254, 45, 174);
+    padding: 20px;
+    border-radius: 30px;
+    border: 2px solid plum;
+}
+/* ENLACE BOTÓN ROSA */
+.btn-pink a{
+    color: white;
+    text-decoration: none;
+}
+/* EFECTO EN BOTÓN ROSA */
+.btn-pink:hover {
+    background-color: pink;
+    cursor: pointer;
+}
+/* EFECTO EN EL ENLACE DEL BOTÓN ROSA */
+.btn-pink a:hover{
+    color: rgb(254, 45, 174);
+
+}
+/* BOTÓN LILA-LINEA */
+.btn-lined {
+    background-color: plum;
+    padding: 20px;
+    border-radius: 30px;
+    text-decoration: underline;
+    border: 2px solid pink;
+}
+/* ENLACE BOTÓN LILA-LINEA */
+.btn-lined a {
+    color: black;
+}
+/* EFECTO EN BOTÓN LILA-LINEA */
+.btn-lined:hover {
+    background-color: white;
+    color: plum;
+    cursor: pointer;
+}
+/* EFECTO EN ENLACE DE BOTON LILA-LINEA */
+.btn-lined a:hover{
+    color: plum
+}
+
+
+/* SECCION DE ICONOS */
+.section1 {
+    background-color: #ffff;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 30px;
+}
+/* CONTENEDOR ICONOS */
+.iconos{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    width: 100%;
+    gap: 20px;
+}
+/* ICONOS-ESTILOS */
+.icon {
+    width: 100%;
+    height: 60px;
+    padding: 10px;
+    border: solid 3px plum;
+    border-radius: 20px;
+    background-color: pink;
+    color: rgb(254, 45, 174);
+}
+
+
+/* CONTENEDOR DE TITULOS */
+.section2 {
+    display: flex;
+    height: 80px;
+    background-color: #ffff;
+    border-radius: 7px;
+    margin: 50px 5px 5px 5px;
+    padding: 0px 20px 0px 20px;
+
+}
+
+/* ELEMENTOS-ICONOS DE TITULOS */
+.section2 li{
+   margin-left: 500px;
+   margin-top: 20px;
+    color: rgb(254, 45, 174);
+    list-style: none;
+}
+/* TITULOS */
+.section2 h2{
+    width: 80%;
+}
+
+
+/* SECCION DE FORMACION-HABILIDADES Y SECCION DE TRABAJOS */
+.section3{
+    background-color: #ffff;
+    border-radius: 7px;
+    margin: 5px;
+    padding: 10px 25px 10px 25px ;
+    gap: 20px;
+    display: flex;
+}
+/* TITULOS DE SUBSECCION DE SECCIONES #3-*/
+.section3 .subsection h2{
+    font-size: large;
+    color: rgb(254, 45, 174);
+    text-align: left;
+}
+
+/* PARRAFO DE SUBSECCION DE FORMACION */
+.formacion{
+    text-align: left;
+    font-size: medium;
+}
+/* ESPACIO Y LINEAS ENTRE PARRAFOS DE SUBSECCION HABILIDADES */
+.parrafo {
+    padding-bottom: 15px;
+    border-bottom: solid 3px pink;
+}
+/* ENLACES DE SUBSECCION DE SECCIONES #3 */
+.section3 a{
+    font-size: smaller;
+    padding: 5px;
+    color: rgb(254, 45, 174);
+    background-color: rgba(221, 160, 221, 0.754);
+    border-radius: 30px;
+    border: dotted 3px pink
+}
+/* EFECTOS EN ENLACES DE SUBSECCION DE SECCIONES #3 */
+.section3 a:hover {
+    color: white;
+}
+/* IMAGENES DE SUBSECCION DE SECCION #3 */
+.section3 .subsection img{
+    width: 100%;
+    height: 700px;
+}
+/* ESTILOS EN FECHAS DE SUBSECCION DE FORMACION  */
+.fecha {
+    font-size: small;
+    text-align: center;
+    width: 40%;
+    padding: 5px;
+    border: solid 2px plum;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+
+/* PRIMER FORMATO DE CONTACTO */
+/* .section .action form input{ */
+/* border: solid rgb(128, 128, 128) 1px; */
+/* } */
+
+/* .action form input:active{ */
+/* border: solid rgb(83, 53, 250) 1px; */
+/* } */
+
+/* .section .form .textarea{ */
+/* border: grey 1px; */
+/* } */
+/* .section .form .textarea:active{ */
+/* border: solid rgb(83, 53, 250) 1px; */
+/* } */
+
+
+/* SECCION FORMATO CONTACTO */
+.section form {
+    width: 100%;
+
+}
+/* DATO-NOMBRE */
+.section form .datos {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 98%;
+}
+/* DATO-MENSAJE */
+.section form .mensaje{
+    width: 98%;
+}
+
+.mensaje input {
+    height: 100px;
+}
+
+.field {
+    width: 100%;
+}
+/* MENSAJE */
+.field label {
+    font-size: medium;
+    color: black;
+}
+/* AREA MENSAJE */
+.field input {
+    display: block;
+    width: 100%;
+    line-height: 1.5;
+    font-size: 14px;
+    border-color: pink;
+}
+/* AREA DEL BOTON DE ENVIAR */
+form .enviar{
+    display: flex;
+    justify-content: end;
+    margin: 10px;
+}
+/* BOTON DE ENVIAR */
+input[type="submit"] {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    background-color: plum;
+    color: black;
+    border: solid 2px rgb(254, 45, 174);
+    border-radius: 30px;
+    cursor: pointer;
+}
+/* CAMBIOS EN EL BOTON D EENVIAR */
+input[type="submit"]:hover {
+ color: white;
+}
+
+
+/* SECCION DE REDES LABORALES */
+.section .redes{
+    display: flex;
+    width: 100%;
+    height: 80px;
+    justify-content: center;
+}
+/* CONTENEDOR DE REDES LABORALES */
+.enlaces{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+ /* ENLACES E REDES LABORALES */
+.enlaces a{
+    display: flex;
+    gap: 5px;
+    margin: 20px;
+    padding: 10px;
+    background-color: pink;
+    border-radius: 20px;
+    color: rgb(254, 45, 174);
+    border: dotted;
+    border-color: plum;
+}
+/* CAMBIOS EN LOS ENLACES DE REDES LABORALES */
+.enlaces a:hover {
+    color: white;
+}
+
+
+/* PIE DE PAGINA */
+.final{
+    text-align: center;
+    background-image: url(./img/fondo\ ByN.jpg);
+    height: 200px;
+    border-radius: 7px;
+    margin: 20px 5px 5px 5px;
+}
+/*TEXTO PIE DE PAGINA */
+.final p{
+    background-color: rgba(255, 192, 203, 0.494);
+    font-style: italic;
+    font-size: medium;
+    font-weight: 500;
+    height: 200px;
+    margin: 0px;
+}
+/* IMAGEN LOGO "DL" PIE DE PAGINA */
+.final img{
+    width: 30px;
+    border: solid 1px rgb(254, 45, 174);
+    border-radius: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* @media screen and (max-width:950px){ 
+    body {
+        margin: 0%;
+        padding: 0%;
+
+    }
+    .container{
+
+    }
+
+    .sticky-nav {
+       z-index: 1;
+       width: 280px;
+       height: 55px;
+       left: 20px;
+       top: 20px;
+    }
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        margin: 0;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+
+    .sticky-nav a{
+        border: none;
+        margin: 10px;
+        padding: 15px;
+        margin: 0;
+        border-right: solid 1px pink;
+    }
+    .sticky-nav .contacto{
+        border-right: none;
+    }
+
+    .section, .section2, .section3, .section4{
+        flex-direction: column;
+    
+} */
